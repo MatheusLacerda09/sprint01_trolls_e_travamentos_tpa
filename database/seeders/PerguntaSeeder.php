@@ -4,15 +4,21 @@ namespace Database\Seeders;
 
 use App\Models\Evento;
 use App\Models\Pergunta;
+<<<<<<< HEAD
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
+=======
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Carbon;
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
 
 class PerguntaSeeder extends Seeder
 {
     public function run(): void
     {
+<<<<<<< HEAD
         $user = User::create([
             'name' => 'nato-re',
             'email' => 'nato-re@gmail.com',
@@ -24,6 +30,8 @@ class PerguntaSeeder extends Seeder
             'descricao'   => 'Evento corporativo de tecnologia com 500 participantes simultâneos.',
             'data_evento' => Carbon::now(),
         ]);
+=======
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
 
 
         // Injeta 5.000 perguntas de teste no evento principal para simular a carga pesada

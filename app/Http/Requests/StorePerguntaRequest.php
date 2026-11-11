@@ -6,14 +6,18 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class StorePerguntaRequest extends FormRequest
 {
+<<<<<<< HEAD
     /**
      * Determina se o usuário está autorizado a fazer esta requisição.
      */
+=======
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
     public function authorize(): bool
     {
         return true;
     }
 
+<<<<<<< HEAD
     /**
      * A rota é POST /eventos/{id}/perguntas e o formulário não envia
      * evento_id no corpo. Copiamos o {id} da URL para o campo evento_id
@@ -47,4 +51,13 @@ class StorePerguntaRequest extends FormRequest
             'evento_id.exists'   => 'O evento informado não existe.',
         ];
     }
+=======
+    public function rules(): array
+    {
+        return [
+            'texto' => ['required', 'string', 'min:10', 'max:255'],
+            'evento_id' => ['required', 'exists:eventos,id'],
+        ];
+    }
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
 }

@@ -9,6 +9,10 @@
 /.idea
 /.nova
 /.phpunit.cache
+<<<<<<< HEAD
+=======
+/.vscode
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
 /.zed
 /auth.json
 /node_modules

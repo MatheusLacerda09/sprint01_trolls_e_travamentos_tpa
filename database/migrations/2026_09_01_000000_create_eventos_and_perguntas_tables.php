@@ -13,15 +13,21 @@ return new class extends Migration
             $table->string('titulo');
             $table->text('descricao')->nullable();
             $table->dateTime('data_evento')->nullable();
+<<<<<<< HEAD
             $table->foreignId('user_id')->nullable()->constrained('users')->onDelete('cascade');
+=======
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
             $table->timestamps();
         });
 
         Schema::create('perguntas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('evento_id')->constrained('eventos')->onDelete('cascade');
+<<<<<<< HEAD
             $table->foreignId('user_id')->nullable()->constrained('users')->onDelete('cascade');
             $table->boolean('is_public')->default(false);
+=======
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
             $table->text('texto');
             $table->string('status')->default('pendente');
             $table->timestamps();

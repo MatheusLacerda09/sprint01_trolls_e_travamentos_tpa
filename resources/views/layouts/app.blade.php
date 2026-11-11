@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'FalaQ-Eu_T_3scuto')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<<<<<<< HEAD
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+=======
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
     <style>
         body { background-color: #0f1117; color: #e2e8f0; font-family: system-ui, sans-serif; }
         .card { background-color: #1a1d27; border: 1px solid #2e3347; color: #e2e8f0; }
@@ -22,6 +25,7 @@
             <a class="navbar-brand fw-bold" href="{{ route('eventos.index') }}">
                 🚀 FalaQ-Eu_T_3scuto <span class="badge bg-secondary fs-6">MVP</span>
             </a>
+<<<<<<< HEAD
             @auth
                 <span>Olá, {{ Auth::user()->name }}</span>
                 <form method="post" action="{{ route('auth.logout') }}">
@@ -38,6 +42,8 @@
                 </a>
             @endguest
 
+=======
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
         </div>
     </nav>
 
@@ -53,4 +59,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795

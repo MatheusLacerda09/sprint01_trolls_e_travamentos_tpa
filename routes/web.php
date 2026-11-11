@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EventoController;
+<<<<<<< HEAD
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,10 @@ Route::post('/login', [LoginController::class, 'store'])->name('login.store');
 Route::post('/logout', [LoginController::class, 'logout'])->name('auth.logout');
 
 
+=======
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', [EventoController::class, 'index'])->name('eventos.index');
+Route::get('/eventos/{id}', [EventoController::class, 'show'])->name('eventos.show');
+Route::post('/eventos/{id}/perguntas', [EventoController::class, 'storePergunta'])->name('eventos.perguntas.store');
+>>>>>>> 596e555460e862e73aa1f31c51a9f5935a72f795
